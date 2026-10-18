@@ -1,0 +1,28 @@
+{
+  "name": "Qt DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "mhutchie.git-graph",
+        "ms-vscode.cpptools-themes"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "forwardPorts": [6000],
+  "containerEnv": {
+    "DISPLAY": ":0"
+  },
+  "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"]
+}
