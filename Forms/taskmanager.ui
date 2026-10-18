@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TaskManager</class>
+ <widget class="QWidget" name="TaskManager">
+  <property name="windowTitle">
+   <string>Task Manager</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- ============================
+        QTableView: processTable
+        ============================ -->
+   <item>
+    <widget class="QTableView" name="processTable">
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+
+   <!-- ============================
+        QPushButton: endProcessButton
+        ============================ -->
+   <item>
+    <widget class="QPushButton" name="endProcessButton">
+     <property name="text">
+      <string>End Process</string>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+
+   <!-- ============================
+        QLabel: dragInstruction
+        ============================ -->
+   <item>
+    <widget class="QLabel" name="dragInstruction">
+     <property name="text">
+      <string>Drag a process from the table onto the 'End Process' button to terminate it.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>

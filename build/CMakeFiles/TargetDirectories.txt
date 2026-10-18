@@ -1,0 +1,4 @@
+/workspaces/Windows-Like-Task-Manager/build/CMakeFiles/TaskManager.dir
+/workspaces/Windows-Like-Task-Manager/build/CMakeFiles/edit_cache.dir
+/workspaces/Windows-Like-Task-Manager/build/CMakeFiles/rebuild_cache.dir
+/workspaces/Windows-Like-Task-Manager/build/CMakeFiles/TaskManager_autogen.dir

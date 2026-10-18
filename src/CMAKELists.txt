@@ -1,0 +1,4 @@
+target_sources(TaskManager PRIVATE
+    main.cpp
+    taskmanager.cpp
+)
